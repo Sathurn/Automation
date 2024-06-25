@@ -5,4 +5,22 @@
             <class name="SimpleTest"/>
         </classes>
     </test>
+
+<!--    <test name="Register User">-->
+<!--        <classes>-->
+<!--            <class name="tests.RegisterUser"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Login User (with success)">-->
+<!--        <classes>-->
+<!--            <class name="tests.LoginUserWithSuccess"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Login User (without success)">-->
+<!--        <classes>-->
+<!--            <class name="tests.LoginUserWithoutSuccess"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 </suite>
