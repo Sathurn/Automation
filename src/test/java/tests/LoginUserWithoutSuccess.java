@@ -26,6 +26,7 @@ public class LoginUserWithoutSuccess extends BaseTest {
 
      //   Assert.assertEquals(login.getAccessForbidden(),"Access forbidden!");
 
+
         Assert.assertNotNull(login.getAccessForbidden());
 
     }
