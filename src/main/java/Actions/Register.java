@@ -48,6 +48,6 @@ public class Register {
     }
 
     public void setSubmit(){
-        elements.submit().click();
+        elements.clickSubmitButton().click();
     }
 }

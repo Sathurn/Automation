@@ -48,7 +48,7 @@ public class RegisterElements {
         return driver.findElement(By.cssSelector("#trainer"));
     }
 
-    public WebElement submit(){
+    public WebElement clickSubmitButton(){
         return driver.findElement(By.cssSelector("#submit"));
     }
 }
