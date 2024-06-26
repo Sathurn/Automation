@@ -31,6 +31,7 @@ public class BaseTest {
 
     @AfterClass
     public void tearDown() {
+        ReportManager.ReportGenerator();
         if (driver != null) {
             driver.quit();
         }

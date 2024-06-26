@@ -14,4 +14,6 @@ public class SimpleActions {
     public String getLoginText(){
         return elements.loginText().getText();
     }
+
+
 }

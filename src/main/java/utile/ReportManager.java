@@ -28,4 +28,10 @@ public class ReportManager {
 
     }
 
+    public static void ReportGenerator(){
+
+        extentReports.flush();
+
+    }
+
 }
