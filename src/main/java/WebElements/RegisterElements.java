@@ -49,6 +49,7 @@ public class RegisterElements {
     }
 
     public WebElement clickSubmitButton(){
+
         return driver.findElement(By.cssSelector("#submit"));
     }
 }

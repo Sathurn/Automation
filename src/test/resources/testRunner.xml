@@ -1,26 +1,27 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 <suite name="SeleniumTestSuite">
-    <test name="SimpleTest">
+
+    <!--    <test name="SimpleTest">-->
+    <!--        <classes>-->
+    <!--            <class name="SimpleTest"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+    <!--    <test name="Register User">-->
+    <!--        <classes>-->
+    <!--            <class name="tests.RegisterUser"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+    <!--    <test name="Login Trainer">-->
+    <!--        <classes>-->
+    <!--            <class name="tests.LoginTrainer"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+    <test name="Login Trainer">
         <classes>
-            <class name="SimpleTest"/>
+            <class name="tests.TrainingProgram"/>
         </classes>
     </test>
-
-<!--    <test name="Register User">-->
-<!--        <classes>-->
-<!--            <class name="tests.RegisterUser"/>-->
-<!--        </classes>-->
-<!--    </test>-->
-
-<!--    <test name="Login User (with success)">-->
-<!--        <classes>-->
-<!--            <class name="tests.LoginUserWithSuccess"/>-->
-<!--        </classes>-->
-<!--    </test>-->
-
-<!--    <test name="Login User (without success)">-->
-<!--        <classes>-->
-<!--            <class name="tests.LoginUserWithoutSuccess"/>-->
-<!--        </classes>-->
-<!--    </test>-->
 </suite>
