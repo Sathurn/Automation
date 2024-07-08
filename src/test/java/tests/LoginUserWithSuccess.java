@@ -1,12 +1,11 @@
 package tests;
 
 import Actions.Login;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import utile.BaseTest;
-import java.lang.Thread;
+
 import java.time.Duration;
 
 import static java.lang.Thread.sleep;

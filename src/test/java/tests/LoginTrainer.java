@@ -3,15 +3,9 @@ package tests;
 import Actions.Dashboard;
 import Actions.Login;
 import Actions.Register;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 import utile.BaseTest;
-import org.openqa.selenium.By;
 import utile.ConfigLoader;
-
-import java.time.Duration;
 
 public class LoginTrainer extends BaseTest {
 
@@ -27,7 +21,7 @@ public class LoginTrainer extends BaseTest {
         dashboard = new Dashboard(driver);
         register = new Register(driver);
 
-        ConfigLoader configLoader = new ConfigLoader("src/test/resources/propietati/dateUser1.properties");
+        ConfigLoader configLoader = new ConfigLoader("src/test/resources/proprietati/dateUser1.properties");
         String email = configLoader.getProperty("email");
         String parola = configLoader.getProperty("parola");
 
