@@ -12,23 +12,24 @@ public class LoginElements {
         this.driver = driver;
     }
 
-    public WebElement registerButton() {
+
+    public WebElement registerButton(){
         return driver.findElement(By.className("register"));
     }
 
-    public WebElement loginEmail(){
-        return driver.findElement(By.id("userEmail"));
+    public WebElement userEmail(){
+        return driver.findElement(By.cssSelector("#userEmail"));
     }
 
-    public WebElement loginPassword(){
-        return driver.findElement(By.id("userPassword"));
+    public WebElement userPassword(){
+        return driver.findElement(By.cssSelector("#userPassword"));
     }
 
-    public WebElement loginButton() {
-        return driver.findElement(By.id("submitButton"));
+    public WebElement submitButton(){
+        return driver.findElement(By.cssSelector("#submitButton"));
     }
 
-    public WebElement accessForbidden(){
-        return driver.findElement(By.id("errorForbiddenAccess"));
+    public WebElement errorForbiddenAccess(){
+        return driver.findElement(By.cssSelector("#errorForbiddenAccess"));
     }
 }
