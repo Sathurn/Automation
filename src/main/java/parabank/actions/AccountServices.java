@@ -20,6 +20,34 @@ public class AccountServices {
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
+    public void clickOpenNewAccount(){
+        elements.openNewAccountLink().click();
+    }
+
+    public void clickAccountOverview(){
+        elements.accountOverviewLink().click();
+    }
+
+    public void clickTransferFunds(){
+        elements.transferFundsLink().click();
+    }
+
+    public void clickBillPay(){
+        elements.billPayLink().click();
+    }
+
+    public void clickFindTransactions(){
+        elements.findTransactionsLink().click();
+    }
+
+    public void clickUpdateContactInfo(){
+        elements.updateContactInfoLink().click();
+    }
+
+    public void clickRequestLoan(){
+        elements.requestLoanLink().click();
+    }
+
     public void clickLogOut(){
         elements.logOutLink().click();
     }
