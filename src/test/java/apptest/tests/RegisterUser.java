@@ -1,12 +1,11 @@
-package tests;
+package apptest.tests;
 
 import Actions.Login;
 import Actions.Register;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import utile.BaseTest;
 
-public class RegisterUser extends BaseTest {
+public class RegisterUser extends BaseAppTest {
 
     private Login login = null;
     private Register register = null;

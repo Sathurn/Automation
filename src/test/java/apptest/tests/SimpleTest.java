@@ -1,16 +1,15 @@
+package apptest.tests;
+
 import Actions.SimpleActions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import utile.BaseTest;
 
-public class SimpleTest extends BaseTest {
+public class SimpleTest extends BaseAppTest {
 
     @Test
     public void firstTest(){
 
         initTest("Sample Test");
-
-        driver. get("http://apptest.go.ro:9999/login");
 
         String expectedText = "Loin";
         SimpleActions simpleActions = new SimpleActions(driver);

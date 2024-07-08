@@ -1,10 +1,10 @@
-package tests;
+package apptest.tests;
 
 import Actions.Login;
 import org.testng.annotations.Test;
 import utile.BaseTest;
 
-public class LoginUserWithoutSuccess extends BaseTest {
+public class LoginUserWithoutSuccess extends BaseAppTest {
 
     private Login login = null;
 

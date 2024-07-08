@@ -1,16 +1,13 @@
-package tests;
+package apptest.tests;
 
 import Actions.Login;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import utile.BaseTest;
 
 import java.time.Duration;
 
-import static java.lang.Thread.sleep;
-
-public class LoginUserWithSuccess extends BaseTest {
+public class LoginUserWithSuccess extends BaseAppTest {
 
     private Login login = null;
 

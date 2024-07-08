@@ -16,17 +16,22 @@ import org.testng.annotations.BeforeClass;
 
 public class BaseTest {
 
+    private String appUrl;
     public WebDriver driver;
     private ExtentTest extentTest;
     private ScreenshotUtils screenshotUtils;
     private static ExtentReports extentReports; //aici este modificare
+
+    public BaseTest(String appUrl) {
+        this.appUrl = appUrl;
+    }
 
     @BeforeClass
     public void setupClass() {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         screenshotUtils = new ScreenshotUtils(driver);
-        driver.get("http://apptest.go.ro:9999/login");
+        driver.get(this.appUrl);
 
         if (extentReports == null) { //aici este modificare
             extentReports = new ExtentReports();

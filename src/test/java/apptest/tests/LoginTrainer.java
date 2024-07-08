@@ -1,33 +1,24 @@
-package tests;
+package apptest.tests;
 
 import Actions.Dashboard;
 import Actions.Login;
-import Actions.Training;
+import Actions.Register;
 import org.testng.annotations.Test;
-import utile.BaseTest;
 import utile.ConfigLoader;
 
-public class TrainingProgram extends BaseTest {
+public class LoginTrainer extends BaseAppTest {
 
     private Login login = null;
     private Dashboard dashboard = null;
-
-    private RegisterUser registerUser = null;
-    private Training training;
+    private Register register = null;
 
     @Test
-    public void openTrainingTab(){
+    public void loginTrainer(){
 
-        initTest("Training program");
+        initTest("Login trainer");
         login = new Login(driver);
         dashboard = new Dashboard(driver);
-        registerUser = new RegisterUser();
-        training = new Training(driver);
-
-        login();
-    }
-
-    private void login() {
+        register = new Register(driver);
 
         ConfigLoader configLoader = new ConfigLoader("src/test/resources/proprietati/dateUser1.properties");
         String email = configLoader.getProperty("email");
@@ -37,9 +28,10 @@ public class TrainingProgram extends BaseTest {
         login.enterPassword(parola);
         login.clickSubmitButton();
 
-        dashboard.clickTrainingButton();
-
-        training.clickGenerateProgramButton();
-
+        if (login.errorForbiddenAccessText()){
+            login.clickRegisterButton();
+            register.registerUser(true);
+        }
+   //     Assert.assertTrue(dashboard.getUserEmailFromDashBoard().equalsIgnoreCase(email));
     }
 }
