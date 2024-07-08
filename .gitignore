@@ -1,3 +1,5 @@
+ExtentReports.html
+Screenshots
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
