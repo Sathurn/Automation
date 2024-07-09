@@ -16,6 +16,10 @@ public class Overview {
         this.accountServices = new AccountServices(driver);
     }
 
+    public UpdateProfile updateProfile(){
+        return accountServices.clickUpdateContactInfo();
+    }
+
     public void logOut(){
         accountServices.clickLogOut();
     }

@@ -40,8 +40,9 @@ public class AccountServices {
         elements.findTransactionsLink().click();
     }
 
-    public void clickUpdateContactInfo(){
+    public UpdateProfile clickUpdateContactInfo(){
         elements.updateContactInfoLink().click();
+        return new UpdateProfile(driver);
     }
 
     public void clickRequestLoan(){
