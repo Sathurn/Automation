@@ -21,7 +21,7 @@ public class UpdateProfileWithSuccess extends BaseParaBankTest {
         login.enterPassword("1234");
         Overview overviewPage = login.clickSubmitButton();
 
-        UpdateProfile updateProfilePage = overviewPage.updateProfile();
+        UpdateProfile updateProfilePage = overviewPage.updateProfile();;
 
         Assert.assertEquals(driver.getCurrentUrl(),"https://parabank.parasoft.com/parabank/updateprofile.htm");
 
