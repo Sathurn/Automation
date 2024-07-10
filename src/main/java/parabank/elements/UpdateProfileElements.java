@@ -8,7 +8,6 @@ public class UpdateProfileElements {
 
     WebDriver driver = null;
 
-
     public UpdateProfileElements(WebDriver driver) {
         this.driver = driver;
     }

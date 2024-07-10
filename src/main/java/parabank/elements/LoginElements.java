@@ -14,7 +14,7 @@ public class LoginElements {
 
 
     public WebElement registerLink(){
-        return driver.findElement(By.className("register"));
+        return driver.findElement(By.xpath("//*[@id=\"loginPanel\"]/p[2]/a"));
     }
 
     public WebElement username(){
@@ -32,4 +32,5 @@ public class LoginElements {
     public WebElement errorForbiddenAccess(){
         return driver.findElement(By.cssSelector(".error"));
     }
+
 }

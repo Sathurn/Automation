@@ -59,4 +59,10 @@ public class Login {
         return element.errorForbiddenAccess().getText();
 
     }
+
+    public void clickRegisterLink(){
+        element.registerLink().click();
+    }
+
+
 }

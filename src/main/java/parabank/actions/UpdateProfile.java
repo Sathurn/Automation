@@ -18,30 +18,37 @@ public class UpdateProfile {
     }
 
     public void writeFirstName(String firstName){
+        elements.firstName().clear();
         elements.firstName().sendKeys(firstName);
     }
 
     public void writeLastName(String lastName){
+        elements.lastName().clear();
         elements.lastName().sendKeys(lastName);
     }
 
     public void writeStreet(String street){
+        elements.address().clear();
         elements.address().sendKeys(street);
     }
 
     public void writeCity(String city){
+        elements.city().clear();
         elements.city().sendKeys(city);
     }
 
     public void writeState(String state){
+        elements.state().clear();
         elements.state().sendKeys(state);
     }
 
     public void writeZipCode(String zipCode){
+        elements.zipCode().clear();
         elements.zipCode().sendKeys(zipCode);
     }
 
     public void writePhoneNumber(String phoneNumber){
+        elements.phoneNumber().clear();
         elements.phoneNumber().sendKeys(phoneNumber);
     }
 

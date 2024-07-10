@@ -11,7 +11,7 @@ public class LoginUserWithSuccess extends BaseParaBankTest {
     @Test
     public void loginUser() {
 
-         login = new Login(driver);
+        login = new Login(driver);
 
         initTest("Login User (with success)");
 
