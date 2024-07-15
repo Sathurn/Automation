@@ -3,6 +3,8 @@ package apptest.tests;
 import Actions.Dashboard;
 import Actions.Login;
 import Actions.Training;
+import org.testng.Assert;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import utile.ConfigLoader;
 
@@ -14,6 +16,14 @@ public class TrainingProgram extends BaseAppTest {
     private RegisterUser registerUser = null;
     private Training training;
 
+
+
+    @BeforeTest
+    public void setup(){
+
+
+    }
+
     @Test
     public void openTrainingTab(){
 
@@ -24,6 +34,10 @@ public class TrainingProgram extends BaseAppTest {
         training = new Training(driver);
 
         login();
+        dashboard.clickTrainingButton();
+        training.clickGenerateProgramButton();
+
+
     }
 
     private void login() {
@@ -32,13 +46,22 @@ public class TrainingProgram extends BaseAppTest {
         String email = configLoader.getProperty("email");
         String parola = configLoader.getProperty("parola");
 
+        loginActions(email, parola);
+
+        if(login.errorForbiddenAccessText()){
+            login.clickRegisterButton();
+            registerUser.registerUser(true);
+
+            loginActions(email,parola);
+        }
+
+        Assert.assertTrue((dashboard.getUserEmailFromDashboard().equalsIgnoreCase(email)));
+
+    }
+
+    private void loginActions(String email, String parola) {
         login.enterUserName(email);
         login.enterPassword(parola);
         login.clickSubmitButton();
-
-        dashboard.clickTrainingButton();
-
-        training.clickGenerateProgramButton();
-
     }
 }

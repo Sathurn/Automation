@@ -11,7 +11,7 @@ public class RegisterUser extends BaseAppTest {
     private Register register = null;
 
     @Test
-    public void registerUser() {
+    public void registerUser(boolean b) {
 
         initTest("Register User");
 

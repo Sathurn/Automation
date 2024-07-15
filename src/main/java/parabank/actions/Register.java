@@ -88,7 +88,7 @@ public class Register {
         return elements.signUpMessage().getText();
     }
 
-    public boolean successfulRegistrationTextExists(){
+    public boolean successfulRegistrationTitleExists(){
         try {
             wait.until(d -> elements.succesfulRegisterElement().isDisplayed());
             return elements.succesfulRegisterElement().isDisplayed();
@@ -101,5 +101,10 @@ public class Register {
 
         wait.until(d -> elements.signUpEasyTitle().isDisplayed());
         return elements.signUpEasyTitle().getText();
+    }
+
+    public String succesfulRegistrationMessage(){
+        wait.until(d -> elements.welcomeMessage().isDisplayed());
+        return elements.welcomeMessage().getText();
     }
 }
