@@ -20,6 +20,14 @@ public class Overview {
         return accountServices.clickUpdateContactInfo();
     }
 
+    public TransferFunds transferFunds(){
+        return accountServices.clickTransferFunds();
+    }
+
+    public AccountOverview accountOverview(){
+        return accountServices.clickAccountOverview();
+    }
+
     public void logOut(){
         accountServices.clickLogOut();
     }

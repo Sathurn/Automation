@@ -24,12 +24,14 @@ public class AccountServices {
         elements.openNewAccountLink().click();
     }
 
-    public void clickAccountOverview(){
+    public AccountOverview clickAccountOverview(){
         elements.accountOverviewLink().click();
+        return new AccountOverview(driver);
     }
 
-    public void clickTransferFunds(){
+    public TransferFunds clickTransferFunds(){
         elements.transferFundsLink().click();
+        return new TransferFunds(driver);
     }
 
     public void clickBillPay(){
